@@ -1,5 +1,7 @@
-import React from 'react';
-import AOS from 'aos'; // Ensure AOS is installed and initialized
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { SocialIcon } from "react-social-icons";
 
 const Contact = () => (
   <section id="contact" className="p-8 bg-background">
@@ -9,65 +11,69 @@ const Contact = () => (
         data-aos="fade-up"
         data-aos-duration="1000"
       >
-        Contact Me
+        Get In Touch
       </h2>
-      <form
-        className="max-w-lg mx-auto bg-white p-8 shadow-lg rounded-lg border border-gray-200 transition-transform transform hover:scale-105 duration-300"
-        data-aos="fade-up"
-        data-aos-duration="1500"
-      >
-        <div className="mb-4">
-          <label
-            htmlFor="name"
-            className="block mb-2 text-gray-700 text-lg font-medium"
-          >
-            Name:
-          </label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary transition-all"
-          />
-        </div>
-
-        <div className="mb-4">
-          <label
-            htmlFor="email"
-            className="block mb-2 text-gray-700 text-lg font-medium"
-          >
-            Email:
-          </label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary transition-all"
-          />
-        </div>
-
-        <div className="mb-4">
-          <label
-            htmlFor="message"
-            className="block mb-2 text-gray-700 text-lg font-medium"
-          >
-            Message:
-          </label>
-          <textarea
-            id="message"
-            name="message"
-            rows="4"
-            className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary transition-all"
-          ></textarea>
-        </div>
-
-        <button
-          type="submit"
-          className="bg-primary text-white px-6 py-3 rounded-lg shadow-md transition-transform transform hover:scale-105 hover:bg-secondary duration-300"
-        >
-          Send
-        </button>
-      </form>
+      <div className="max-w-lg mx-auto bg-white p-8 shadow-lg rounded-lg border border-gray-200">
+        <p className="mb-4 text-gray-700 text-lg font-medium">
+          Feel free to reach out to me through the following methods:
+        </p>
+        <ul className="space-y-4">
+          <li className="text-gray-700 text-lg font-medium flex items-center">
+            {/* <FontAwesomeIcon icon={faEnvelope} className="mr-2 text-primary" /> */}
+            <SocialIcon fallback="mailto" className="mr-1 text-primary" />
+            <span className="font-bold">Email:</span>{" "}
+            <a href="mailto:mukeshjha7464@gmail.com" className="text-primary">
+              mukeshjha7464@gmail.com
+            </a>
+          </li>
+          <li className="text-gray-700 text-lg font-medium flex items-center">
+            {/* <FontAwesomeIcon icon={faLinkedin} className="mr-2 text-primary" /> */}
+            <SocialIcon
+              url="https://www.linkedin.com/in/mukesh-kumar-jha-71aab4228"
+              className="mr-1 text-primary"
+            />
+            <span className="font-bold">LinkedIn:</span>{" "}
+            <a
+              href="https://www.linkedin.com/in/mukesh-kumar-jha-71aab4228"
+              className="text-primary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Mukesh Kumar Jha
+            </a>
+          </li>
+          <li className="text-gray-700 text-lg font-medium flex items-center">
+            {/* <FontAwesomeIcon icon={faPhone} className="mr-2 text-primary" /> */}
+            <SocialIcon fallback="whatsapp" className="mr-1 text-primary" />
+            <span className="font-bold">Whatsapp:</span>{" "}
+            <a href="tel:+918287444564" className="text-primary">
+              +91 8287444564
+            </a>
+          </li>
+          <li className="text-gray-700 text-lg font-medium flex items-center">
+            {/* <FontAwesomeIcon icon={faTwitter} className="mr-2 text-primary" /> */}
+            <SocialIcon
+              url="https://x.com/mukeshjha2111"
+              className="mr-1 text-primary"
+            />
+            <span className="font-bold">Twitter:</span>{" "}
+            <a href="https://x.com/mukeshjha2111" className="text-primary">
+              @mukeshjha2111
+            </a>
+          </li>
+          <li className="text-gray-700 text-lg font-medium flex items-center">
+            {/* <FontAwesomeIcon icon={faTwitter} className="mr-2 text-primary" /> */}
+            <SocialIcon
+              url="https://github.com/Mukeshjha211"
+              className="mr-1 text-primary"
+            />
+            <span className="font-bold">GitHub:</span>{" "}
+            <a href="https://github.com/Mukeshjha211" className="text-primary">
+              @mukeshjha211
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
 );

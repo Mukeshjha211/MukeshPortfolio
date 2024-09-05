@@ -1,26 +1,86 @@
-import React from 'react';
-import AOS from 'aos';
+import React from "react";
+import AOS from "aos";
+import xemailWarmupImage from "../images/XemailWarmUp.png";
+import xemailAuditImage from "../images/email_audit.png";
 
 // Data for the projects
 const projectsData = [
   {
     title: "XEmailWarmup",
-    description: "A tool that performs email warmup to enhance the health of your domain and IP address, ensuring better email deliverability.",
-    link: "https://app.xemailwarmup.com",
-    image: "https://via.placeholder.com/600x400?text=XEmailWarmup" // Placeholder image URL
+    description:
+      "A tool that performs email warmup to enhance the health of your domain and IP address, ensuring better email deliverability.",
+    link: "https:/b2c.xemailwarmup.com",
+    image: xemailWarmupImage, // Placeholder image URL
   },
   {
     title: "XEmailAudit",
-    description: "An auditing tool for domains that provides insights and suggestions to improve email effectiveness and overall domain reputation.",
+    description:
+      "An auditing tool for domains that provides insights and suggestions to improve email effectiveness and overall domain reputation.",
     link: "https://app.xemailaudit.com",
-    image: "https://via.placeholder.com/600x400?text=XEmailAudit" // Placeholder image URL
-  }
+    image: xemailAuditImage, // Placeholder image URL
+  },
+  {
+    title: "XEmailWarmup",
+    description:
+      "A tool that performs email warmup to enhance the health of your domain and IP address, ensuring better email deliverability.",
+    link: "https:/b2c.xemailwarmup.com",
+    image: xemailWarmupImage, // Placeholder image URL
+  },
+  {
+    title: "XEmailAudit",
+    description:
+      "An auditing tool for domains that provides insights and suggestions to improve email effectiveness and overall domain reputation.",
+    link: "https://app.xemailaudit.com",
+    image: xemailAuditImage, // Placeholder image URL
+  },
+  {
+    title: "XEmailWarmup",
+    description:
+      "A tool that performs email warmup to enhance the health of your domain and IP address, ensuring better email deliverability.",
+    link: "https:/b2c.xemailwarmup.com",
+    image: xemailWarmupImage, // Placeholder image URL
+  },
+  {
+    title: "XEmailAudit",
+    description:
+      "An auditing tool for domains that provides insights and suggestions to improve email effectiveness and overall domain reputation.",
+    link: "https://app.xemailaudit.com",
+    image: xemailAuditImage, // Placeholder image URL
+  },
+  {
+    title: "XEmailWarmup",
+    description:
+      "A tool that performs email warmup to enhance the health of your domain and IP address, ensuring better email deliverability.",
+    link: "https:/b2c.xemailwarmup.com",
+    image: xemailWarmupImage, // Placeholder image URL
+  },
+  {
+    title: "XEmailAudit",
+    description:
+      "An auditing tool for domains that provides insights and suggestions to improve email effectiveness and overall domain reputation.",
+    link: "https://app.xemailaudit.com",
+    image: xemailAuditImage, // Placeholder image URL
+  },
+  {
+    title: "XEmailWarmup",
+    description:
+      "A tool that performs email warmup to enhance the health of your domain and IP address, ensuring better email deliverability.",
+    link: "https:/b2c.xemailwarmup.com",
+    image: xemailWarmupImage, // Placeholder image URL
+  },
+  {
+    title: "XEmailAudit",
+    description:
+      "An auditing tool for domains that provides insights and suggestions to improve email effectiveness and overall domain reputation.",
+    link: "https://app.xemailaudit.com",
+    image: xemailAuditImage, // Placeholder image URL
+  },
 ];
 
 const Projects = () => (
   <section id="projects" className="p-8 bg-background">
     <div className="container mx-auto">
-      <h2 className="text-3xl font-semibold mb-6 text-primary text-center">
+      <h2 className="text-5xl font-extrabold mb-10 text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-center">
         Projects
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -36,7 +96,7 @@ const Projects = () => (
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-48 object-cover transition-transform duration-500 hover:scale-110"
+                  className="w-full h-48 object-contain transition-transform duration-500 hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-30"></div>
               </div>

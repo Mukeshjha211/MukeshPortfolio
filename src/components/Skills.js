@@ -1,5 +1,5 @@
-import React from 'react';
-import AOS from 'aos'; // Ensure AOS is installed and initialized
+import React from "react";
+import AOS from "aos"; // Ensure AOS is installed and initialized
 
 // Data for the skills with corresponding hover colors
 const skillsData = [
@@ -21,7 +21,11 @@ const skillsData = [
 const Skills = () => (
   <section id="skills" className="p-8 bg-background">
     <div className="container mx-auto text-center">
-      <h2 className="text-3xl font-semibold mb-6 text-primary">
+      <h2
+        className="text-3xl font-semibold mb-6 text-primary text-center"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         Skills
       </h2>
       <ul className="flex flex-wrap justify-center gap-6">
