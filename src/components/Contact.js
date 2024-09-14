@@ -42,14 +42,13 @@ const Contact = () => (
               Mukesh Kumar Jha
             </a>
           </li>
-          <li className="text-gray-700 text-lg font-medium flex items-center">
-            {/* <FontAwesomeIcon icon={faPhone} className="mr-2 text-primary" /> */}
+          {/* <li className="text-gray-700 text-lg font-medium flex items-center">
             <SocialIcon fallback="whatsapp" className="mr-1 text-primary" />
             <span className="font-bold">Whatsapp:</span>{" "}
             <a href="tel:+918287444564" className="text-primary">
               +91 8287444564
             </a>
-          </li>
+          </li> */}
           <li className="text-gray-700 text-lg font-medium flex items-center">
             {/* <FontAwesomeIcon icon={faTwitter} className="mr-2 text-primary" /> */}
             <SocialIcon

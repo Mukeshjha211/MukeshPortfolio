@@ -4,14 +4,15 @@ const Experience = ({ data }) => {
   return (
     <section id="experience" className="p-8 md:p-16 bg-background">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between space-y-8 md:space-y-0 md:space-x-12">
-        
         {/* Company Logo with Decorative Frame */}
         <div className="relative flex-shrink-0 w-full md:w-1/2 lg:w-1/3 rounded-lg overflow-hidden shadow-xl">
-          <img
-            src={data.companyLogo}
-            alt={`${data.companyName} Logo`}
-            className="w-full h-full object-contain"
-          />
+          <div className="w-full h-64 md:h-72 lg:h-80 flex items-center justify-center bg-gray-100">
+            <img
+              src={data.companyLogo}
+              alt={`${data.companyName} Logo`}
+              className="max-w-full max-h-full object-contain"
+            />
+          </div>
           <div className="absolute inset-0 border-4 border-secondary rounded-lg animate-pulse"></div>
         </div>
 
