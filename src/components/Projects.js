@@ -1,11 +1,5 @@
 import React from "react";
-import AOS from "aos";
-import xemailWarmupImage from "../images/XemailWarmUp.png";
-import xemailAuditImage from "../images/email_audit.png";
-// import expenseTrackerImage from "../images/expense_tracker.png"; // Placeholder image
-// import chatAppImage from "../images/chat_app.png"; // Placeholder image
-// import ticTacToeImage from "../images/tic_tac_toe.png"; // Placeholder image
-// import votingDaoImage from "../images/voting_dao.png"; // Placeholder image
+
 
 // Data for the projects
 const projectsData = [

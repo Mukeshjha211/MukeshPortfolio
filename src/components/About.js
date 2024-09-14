@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import AOS from 'aos'; // Ensure AOS is initialized if you use it for animations
 
 const About = ({ data }) => {
   const [isVisible, setIsVisible] = useState(false);

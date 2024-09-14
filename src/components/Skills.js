@@ -1,7 +1,6 @@
 import React from "react";
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGitAlt, FaAws, FaLinux } from "react-icons/fa";
 import { SiMongodb, SiExpress, SiSequelize, SiTypescript, SiMysql } from "react-icons/si";
-import AOS from "aos"; // Ensure AOS is installed and initialized
 
 // Data for the skills with corresponding hover colors and icons
 const skillsData = [
